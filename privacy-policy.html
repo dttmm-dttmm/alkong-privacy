@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>알콩 개인정보처리방침</title>
+<style>
+  :root {
+    --bg: #fbfaf6;
+    --text: #1d2420;
+    --muted: #5c6660;
+    --accent: #2e8662;
+    --line: #e3e6e1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141816;
+      --text: #e3e8e4;
+      --muted: #a3ada7;
+      --accent: #7fd1a8;
+      --line: #2c332f;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    line-height: 1.7;
+    word-break: keep-all;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px 64px;
+  }
+  h1 {
+    margin: 0 0 4px;
+    font-size: 1.7rem;
+  }
+  h2 {
+    margin: 36px 0 8px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: 1.15rem;
+    color: var(--accent);
+  }
+  p, li { font-size: 1rem; }
+  ul { padding-left: 1.2em; }
+  .date { color: var(--muted); margin: 0 0 24px; }
+  .summary {
+    padding: 16px 18px;
+    border-radius: 16px;
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+  }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>알콩 개인정보처리방침</h1>
+  <p class="date">시행일: 2026년 11월 3일</p>
+
+  <p class="summary">
+    알콩은 회원가입 없이 쓰는 복용 기록 앱입니다. 입력한 약과 복용 기록은 사용자의 기기 안에만 저장되며,
+    앱에는 인터넷 권한이 없어 개발자를 포함한 누구에게도 전송되지 않습니다.
+  </p>
+
+  <h2>1. 수집하는 정보</h2>
+  <p>개발자는 앱을 통해 개인정보를 수집하지 않습니다. 앱을 쓰는 동안 사용자가 직접 입력하는 아래 정보는 사용자의 기기 안에만 저장됩니다.</p>
+  <ul>
+    <li>약과 영양제의 이름, 복용 주기, 시작일, 하루 복용 횟수</li>
+    <li>회차별 알림 시각과 그룹</li>
+    <li>날짜별 복용 여부와 먹은 시각</li>
+    <li>위젯의 테마와 투명도 설정</li>
+  </ul>
+  <p>약 이름과 복용 기록은 건강과 관련된 정보일 수 있으므로, 앱은 이를 기기 밖으로 보내지 않습니다. 회원가입과 로그인 기능이 없으며, 이름, 연락처, 위치, 기기 식별자 등은 수집하지 않습니다.</p>
+
+  <h2>2. 정보의 이용 목적</h2>
+  <p>기기에 저장된 정보는 날짜별 복용 목록, 복용 알림, 홈 화면 위젯, 월별 통계를 보여 주는 데에만 쓰입니다.</p>
+
+  <h2>3. 제3자 제공과 외부 전송</h2>
+  <p>앱은 인터넷 권한을 요청하지 않으므로 정보를 서버나 제3자에게 보낼 수 없습니다. 광고, 사용 분석, 추적 도구도 포함하지 않습니다. 다만 사용자가 직접 선택한 아래 경우에는 정보가 기기 밖에 저장될 수 있습니다.</p>
+  <ul>
+    <li>
+      <strong>Android 백업과 기기 이전:</strong> 기기 설정에서 백업이 켜져 있으면 Android가 앱의 기록을 사용자의 Google 계정에 백업하고,
+      새 기기로 옮길 때 함께 옮깁니다. 앱은 종단간 암호화를 지원하는 기기에서만 클라우드 백업을 허용합니다.
+      백업은 Google이 처리하며 개발자는 백업된 내용에 접근할 수 없습니다. 백업에는
+      <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>이 적용되고, 기기 설정에서 끌 수 있습니다.
+    </li>
+    <li>
+      <strong>기록 파일 내보내기:</strong> 통계 탭에서 "기록 내보내기"를 누르면 약과 복용 기록이 담긴 파일을 사용자가 고른 위치에 저장합니다.
+      이 파일은 암호화되지 않으므로 보관하거나 공유할 때 주의해 주세요.
+    </li>
+  </ul>
+
+  <h2>4. 앱이 요청하는 권한</h2>
+  <ul>
+    <li><strong>알림:</strong> 정한 시각에 복용 알림을 보여 줍니다.</li>
+    <li><strong>알람 및 리마인더:</strong> 알림이 늦지 않도록 정확한 시각에 알람을 예약합니다.</li>
+    <li><strong>부팅 완료 수신:</strong> 기기를 다시 켠 뒤에도 알림을 다시 예약합니다.</li>
+  </ul>
+  <p>알림과 알람 권한은 허용하지 않아도 앱을 쓸 수 있으며, 이 경우 알림이 오지 않거나 늦을 수 있습니다.</p>
+
+  <h2>5. 비정상 종료 정보</h2>
+  <p>
+    사용자가 기기에서 허용한 경우, Google Play는 앱이 비정상적으로 종료되거나 응답하지 않을 때의 기술 정보(기기 모델, Android 버전, 오류 위치 등)를
+    모아 개발자에게 통계로 제공합니다. 이 정보는 Google이 수집하며 약 이름이나 복용 기록은 포함되지 않습니다.
+  </p>
+
+  <h2>6. 보관 기간과 삭제</h2>
+  <p>
+    정보는 사용자가 지우기 전까지 기기에 보관됩니다. 앱에서 약을 삭제하면 그 약의 기록이 지워지고,
+    앱을 삭제하거나 기기 설정에서 앱 데이터를 삭제하면 모든 정보가 지워집니다.
+    Google 계정에 백업된 내용은 Google 계정의 백업 설정에서 지울 수 있습니다.
+  </p>
+
+  <h2>7. 아동의 개인정보</h2>
+  <p>앱은 아동을 대상으로 하지 않으며, 아동을 포함한 누구의 개인정보도 수집하지 않습니다.</p>
+</main>
+</body>
+</html>
